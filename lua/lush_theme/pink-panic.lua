@@ -143,7 +143,7 @@ local theme = lush(function()
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
     -- Repeat         { }, --   for, do, while, etc.
     Label { CursorLineNr }, --   case, default, etc.
-    -- Operator       { }, --   "sizeof", "+", "*", etc.
+    Operator { bg = Normal.bg.da(10) }, --   "sizeof", "+", "*", etc.
     -- Keyword        { }, --   any other keyword
     -- Exception      { }, --   try, catch, throw
 
@@ -277,7 +277,7 @@ local theme = lush(function()
     -- TSPunctSpecial       { } , -- Special punctuation that doesn't fit into the previous categories.
     -- TSStorageClass       { } , -- Keywords that affect how a variable is stored: `static`, `comptime`, `extern`, etc.
     -- TSStringRegex        { } , -- Regular expression literals.
-    -- TSVariable           { } , -- Variable names that don't fit into other categories.
+    TSVariable { bg = Normal.bg.da(30) }, -- Variable names that don't fit into other categories.
   }
 end)
 
